@@ -16,7 +16,7 @@ ENV BATIK_VERSION="1.11" \
 RUN apk add --no-cache \
       gnupg \
       bash openssl curl tini \
-      openjdk8 \
+      openjdk8-jre-base \
     ### Install GoSu
     && set -ex \
     && for key in \

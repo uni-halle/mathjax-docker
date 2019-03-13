@@ -10,7 +10,7 @@ Docker-ized version of the [**mathjax-server**](https://github.com/tiarno/mathja
 
 It was written to assist our [ILIAS](https://github.com/ILIAS-eLearning/ILIAS/blob/release_5-4/Services/MathJax/docs/Install-MathJax-Server.txt) instance in generating PDFs, but might be useful for other purposes as well.
 
-This Docker files / image aims to facilate setting up the MathJax Server in an isolated environment, either as part of the docker(-compose) network on the same host as ILIAS, or distributed to another physical or virtual host. This service does not require a connection to ILIAS or its database; however ILIAS must be able to connect to this service in order to be useful. Users of ILIAS do not need connect to this service directly, instead ILIAS will proxy and cache rendered formulae.
+This Docker files / image aims to facilitate setting up the MathJax Server in an isolated environment, either as part of the docker(-compose) network on the same host as ILIAS, or distributed to another physical or virtual host. This service does not require a connection to ILIAS or its database; however ILIAS must be able to connect to this service in order to be useful. Users of ILIAS do not need connect to this service directly, instead ILIAS will proxy and cache rendered formulae.
 
 ## Caveats
 
@@ -83,9 +83,9 @@ MathJax Settings:
 
 ## FAQ
 
-### Why is PNG rendering so slow and consumes considerable amounts of ressources?
+### Why is PNG rendering so slow and consumes considerable amounts of resources?
 
-MathJax-Server decided, in versions up to 1.0 relying on batic SVG generator (Java), and in versions above, to use Phantom.JS.
+MathJax-Server decided, in versions below 1.0 relying on batik SVG generator (Java), and in later versions, to use Phantom.JS.
 
 ### Are special scripts supported?
 
